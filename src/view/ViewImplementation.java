@@ -12,6 +12,7 @@ package view;
 public class ViewImplementation implements View{
      /**
      * Shows a greeting in UI.
+     * 
      * @param greeting A String containing the greeting to be shown.
      */
     @Override
