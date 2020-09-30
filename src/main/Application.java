@@ -5,21 +5,31 @@
  */
 package main;
 
+import control.*;
+import view.*;
+import model.*;
+
 /**
- * This is the application class for the hello wolrd MVC app.
+ * This is the application class for the hello world MVC app.
  * @author Nerea Aranguren
  */
 public class Application {
 
     /** 
-     * 
-     * comentario
-     * 
+     *     
      * 
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        ViewFactory vistaFactoria = new ViewFactory();
+        ModelFactory modeloFactoria = new ModelFactory();
+        
+        Controler controlador = null;
+        controlador = new Controler();
+
+        
+        controlador.run(vistaFactoria.getView(), modeloFactoria.getModel());
     }
     
 }
