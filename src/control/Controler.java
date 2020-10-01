@@ -19,8 +19,7 @@ public class Controler {
         String saludo = null;
         
         saludo = model.getGreeting();
-        view.showGreeting(saludo);
-                
+        view.showGreeting(saludo);      
                 
     }
     
