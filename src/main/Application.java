@@ -11,13 +11,13 @@ import model.*;
 
 /**
  * This is the application class for the hello world MVC app.
- * @author Nerea Aranguren
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public class Application {
 
-    /** 
+    /*
      *     
-     * 
+     * The main method, when launching the application. Creates the controler.
      * @param args the command line arguments
      */
     public static void main(String[] args) {
@@ -27,9 +27,25 @@ public class Application {
         
         Controler controlador = null;
         controlador = new Controler();
+        
+        int opc;
+        
+        opc = menu();
 
         
-        controlador.run(vistaFactoria.getView(), modeloFactoria.getModel());
+        controlador.run(vistaFactoria.getView(), modeloFactoria.getModel(), opc);
     }
     
+    /*
+    * The menu to choose the option you want to see
+    *
+    */
+
+    private static int menu() {
+
+        System.out.println("Dime como quieres ver el saludo?\n1- Texto\n2- Grafico");
+        int opc = Utilidades.Utilidades.leerIntNum(1, 2);
+        
+        return opc;
+    }
 }

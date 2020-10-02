@@ -7,7 +7,8 @@ package model;
 
 /**
  *
- * @author xabig
+ * Contains the necesary methods to implement the model
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public class ModelFactory {
     

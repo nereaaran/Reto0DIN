@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  * View implementation to show greeting in a text type UI.
- * @author Nerea Aranguren
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public class ViewImplementation implements View{
      /**
@@ -27,10 +27,12 @@ public class ViewImplementation implements View{
      * @param greeting A String containing the greeting to be shown.
      */
     @Override
-    public void showGreeting(String greeting){
-        String[] args = null;
+    public void showGreeting(String greeting, int opc){
+        //String[] args = null;
+      
+        if(opc==1){
         System.out.println(greeting);
-        
+        } else {
         JFrame grafico = new JFrame("Hola Mundo!");
         JLabel texto = new JLabel(greeting, JLabel.CENTER);
         
@@ -38,7 +40,9 @@ public class ViewImplementation implements View{
         grafico.setVisible(true);
         grafico.setLocationRelativeTo(null);
         grafico.add(texto);
-  
+        
+        
+        }
         
         //launch(args);
         

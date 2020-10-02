@@ -9,17 +9,21 @@ import view.*;
 import model.*;
 
 /**
- *  
- * @author xabig
+ * The controller takes the greeting and sends it to the view 
+ * 
+ * @param view The view chosen
+ * @param model The model chosen
+ * @param opc The option chosen
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public class Controler {
     
-    public void run(View view, Model model){
+    public void run(View view, Model model, int opc){
         
         String saludo = null;
         
         saludo = model.getGreeting();
-        view.showGreeting(saludo);      
+        view.showGreeting(saludo, opc);      
                 
     }
     

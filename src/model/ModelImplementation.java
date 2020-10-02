@@ -9,7 +9,8 @@ import java.util.ResourceBundle;
 
 /**
  * Model implementation to get greeting to be shown.
- * @author xabig
+ * 
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public class ModelImplementation implements Model{
    

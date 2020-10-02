@@ -6,8 +6,9 @@
 package view;
 
 /**
- *
- * @author Nerea Aranguren
+ * 
+ * Contains the necesary methods to implement the view
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public class ViewFactory {
     

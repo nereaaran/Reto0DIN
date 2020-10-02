@@ -7,7 +7,7 @@ package model;
 
 /**
  * Contain model methods for being used by a controller.
- * @author Nerea Aranguren
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public interface Model {
     /**
