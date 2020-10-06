@@ -5,6 +5,7 @@
  */
 package view;
 
+import conectorSQL.ConectorSQL;
 import static javafx.application.Application.launch;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -31,8 +32,11 @@ public class ViewImplementation implements View{
         //String[] args = null;
       
         if(opc==1){
+            //Consola
         System.out.println(greeting);
-        } else {
+        } else if (opc==2) {
+            
+            //Swing
         JFrame grafico = new JFrame("Hola Mundo!");
         JLabel texto = new JLabel(greeting, JLabel.CENTER);
         
@@ -41,7 +45,13 @@ public class ViewImplementation implements View{
         grafico.setLocationRelativeTo(null);
         grafico.add(texto);
         
+        }
         
+        else{
+            //JavaFX
+            
+            
+            
         }
         
         //launch(args);

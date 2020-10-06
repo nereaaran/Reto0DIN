@@ -6,6 +6,7 @@
 package main;
 
 import control.*;
+import java.sql.SQLException;
 import view.*;
 import model.*;
 
@@ -20,7 +21,7 @@ public class Application {
      * The main method, when launching the application. Creates the controler.
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         
         ViewFactory vistaFactoria = new ViewFactory();
         ModelFactory modeloFactoria = new ModelFactory();

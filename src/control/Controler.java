@@ -5,6 +5,7 @@
  */
 package control;
 
+import java.sql.SQLException;
 import view.*;
 import model.*;
 
@@ -18,7 +19,7 @@ import model.*;
  */
 public class Controler {
     
-    public void run(View view, Model model, int opc){
+    public void run(View view, Model model, int opc) throws SQLException{
         
         String saludo = null;
         

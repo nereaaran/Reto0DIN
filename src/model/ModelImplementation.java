@@ -5,6 +5,8 @@
  */
 package model;
 
+import conectorSQL.ConectorSQL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 /**
@@ -14,11 +16,23 @@ import java.util.ResourceBundle;
  */
 public class ModelImplementation implements Model{
    
+    /*
     public String getGreeting(){
         
         ResourceBundle miDato = ResourceBundle.getBundle("data.propertiesFile");
         String aux = miDato.getString("auxiliar");
        
         return aux;
+    }
+    */
+    
+    public String getGreeting() throws SQLException { 
+        
+        ConectorSQL bd = new ConectorSQL();
+        String greeting;
+            
+        greeting = bd.getGreeting();
+        
+        return greeting;
     }
 }
