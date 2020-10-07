@@ -7,13 +7,13 @@ package view;
 
 /**
  * Contain view methods for being used by a controller.
- * @author Nerea Aranguren
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public interface View {
     /**
      * Shows a greeting in UI.
      * @param greeting A String containing the greeting to be shown.
      */
-    public void showGreeting(String greeting);
+    public void showGreeting(String greeting, int opc);
     
 }

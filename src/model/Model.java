@@ -5,15 +5,17 @@
  */
 package model;
 
+import java.sql.SQLException;
+
 /**
  * Contain model methods for being used by a controller.
- * @author Nerea Aranguren
+ * @author Nerea Aranguren y Xabier Carnero
  */
 public interface Model {
     /**
      * Gets a greeting from de model.
      * @return The greeting containing variable.
      */
-    public String getGreeting();
+    public String getGreeting() throws SQLException;
     
 }
