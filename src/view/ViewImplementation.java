@@ -33,47 +33,23 @@ public class ViewImplementation implements View{
       
         if(opc==1){
             //Consola
-        System.out.println(greeting);
+            System.out.println(greeting);
         } else if (opc==2) {
             
             //Swing
-        JFrame grafico = new JFrame("Hola Mundo!");
-        JLabel texto = new JLabel(greeting, JLabel.CENTER);
-        
-        grafico.setSize(400, 300);
-        grafico.setVisible(true);
-        grafico.setLocationRelativeTo(null);
-        grafico.add(texto);
-        
-        }
-        
-        else{
+            JFrame grafico = new JFrame("Hola Mundo!");
+            JLabel texto = new JLabel(greeting, JLabel.CENTER);
+
+            grafico.setSize(400, 300);
+            grafico.setVisible(true);
+            grafico.setLocationRelativeTo(null);
+            grafico.add(texto);
+
+        } else{
             //JavaFX
-            
-            
-            
-        }
-        
-        //launch(args);
-        
+            JavaFX fx = new JavaFX();
+            fx.main(greeting);
+                  
+        }       
     }
-    /*public void start (Stage primaryStage){
-        Button boton = new Button();
-        boton.setText("Hola Mund00oo!!");
-        
-        StackPane pane = new StackPane();
-        pane.getChildren().add(boton);
-        
-        Scene ventana = new Scene(pane, 680, 400);
-        
-        primaryStage.setScene(ventana);
-        primaryStage.show();
-        
-        System.out.println("Entro!");
-    }
-    
-     public static void main(String[] args) {
-        launch(args);
-    }*/
-    
 }

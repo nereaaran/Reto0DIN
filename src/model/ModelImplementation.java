@@ -17,6 +17,7 @@ import java.util.ResourceBundle;
 public class ModelImplementation implements Model{
    
     /*
+    * Implementacion con archivo de propiedades
     public String getGreeting(){
         
         ResourceBundle miDato = ResourceBundle.getBundle("data.propertiesFile");

@@ -44,8 +44,8 @@ public class Application {
 
     private static int menu() {
 
-        System.out.println("Dime como quieres ver el saludo?\n1- Texto\n2- Grafico");
-        int opc = Utilidades.Utilidades.leerIntNum(1, 2);
+        System.out.println("Dime como quieres ver el saludo?\n1- Texto\n2- Grafico Swing\n3- Grafico JavaFX");
+        int opc = Utilidades.Utilidades.leerIntNum(1, 3);
         
         return opc;
     }

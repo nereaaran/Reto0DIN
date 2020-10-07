@@ -13,8 +13,8 @@ import java.sql.SQLException;
 
 /**
  *
+ * Contiene los metodos necesarios para conectarse con la base de datos SQL
  * @author Nerea Aranguren y Xabier Carnero
- * Esta clase es la que se conecta con la base de datos SQL
  */
 public class ConectorSQL {
     
@@ -86,7 +86,7 @@ public class ConectorSQL {
         rs=stm.executeQuery(greeting);
         
         while (rs.next()) {
-            g=rs.getString("HolaMundo");
+            g=rs.getString("saludo");
         }
         
         rs.close();
